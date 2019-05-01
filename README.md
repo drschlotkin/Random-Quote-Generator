@@ -1,3 +1,5 @@
-## Test
+# Random Quote Generator
 
-This repo is a test
+## Details
+
+* This is a simple applcation using vanilla Javascript that displays a random quote on the screen when you click a button

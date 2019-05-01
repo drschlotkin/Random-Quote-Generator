@@ -24,8 +24,8 @@ const quotes = [
   }
 ]
 
-/* Get quote data, join the quote properties together and display it on the DOM */
 
+/* Get quote data, join the quote properties together and display it on the DOM */
 const printQuote = () => {
     let getQuote = getRandomQuote(quotes);
     let stringOfQuoteProperties = stringQuote(getQuote);
@@ -37,8 +37,7 @@ const printQuote = () => {
  };
 
  
-/* Return a random quote from array of quotes */
-
+ /* Return a random quote from array of quotes */
 const getRandomQuote = (array) => {
   let randomNum = Math.ceil(Math.random() * array.length - 1);
   return array[randomNum];
@@ -46,7 +45,6 @@ const getRandomQuote = (array) => {
 
 
 /* Join string together and return the concatenated string */
-
 const stringQuote = (quote) =>{
   let newString = '';
   newString = `<p class="quote">${quote.quote}</p>`;
@@ -61,15 +59,13 @@ const stringQuote = (quote) =>{
 
 
 /* Start 30 second timer for random quotes */
-
 let timer = setInterval(printQuote, 30000);
 
 
 /* Load random quotes on click and reset timer*/
-
 document.getElementById('loadQuote').addEventListener("click", () => {
   clearInterval(timer)
   printQuote()
   timer = setInterval(printQuote, 30000)
-
 });
+
