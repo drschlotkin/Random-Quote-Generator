@@ -2,4 +2,4 @@
 
 ## Details
 
-* This is a simple applcation using vanilla Javascript that displays a random quote on the screen when you click a button
+* Display a random quote in the browser when you click a button
